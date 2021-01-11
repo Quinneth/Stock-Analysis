@@ -128,14 +128,14 @@ As demonstrated above, improving performance efficiency involves reducing steps,
 ***Original 2018 "All Stocks Analysis" <br/> ![Original_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/original_2018_all_stocks.PNG)
 ***Refactored 2018 "All Stocks Analysis" <br/> ![Refactored_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/refactored_2018_All_stocks_analysis.PNG)
 
-## Summary
-### Advantages or disadvantages of refactoring code in general
-Advantages:
--eliminated logical errors when increasing dataset
--increased execution efficiency by utilizing nested loops
--utilizing previous script revealed source patterns
+# Summary
+## Advantages or disadvantages of refactoring code in general
+### Advantages:
+- eliminated logical errors when increasing dataset
+- increased execution efficiency by utilizing nested loops
+- utilizing previous script revealed source patterns
 ### Disadvantages:
--Refactoring is time-consuming and requires breaking down code into smaller change segments
--Complexity of long procedures require advanced coding skills and problem solving
+- Refactoring is time-consuming and requires breaking down code into smaller change segments
+- Complexity of long procedures require advanced coding skills and problem solving
 ### Specific pros and cons of refactoring:
 The existing functionality of the workbook was maintained when refactoring existing code. This can remain advantageous unless variables change. If the coder made detailed notes of purpose of each line of code, updating is relatively easy. If coder did not make notes, updating may prove to be tedious and may result in numerous runtime errors
