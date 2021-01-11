@@ -70,7 +70,7 @@ This analsyis demonstrates stock performance via yearly returns for years 2017 a
 - Write an if-then statement to check if the current row is the last row with the selected tickerIndex. If it is, then assign the current closing price to the tickerEndingPrices variable
 If so-->assigns current price to the ending price variable:
 
-        If Cells(j + 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value =     tickers(tickerIndex) Then
+        If Cells(j + 1, 1).Value <> tickers(tickerIndex) And Cells(j, 1).Value = tickers(tickerIndex) Then
         Stores Ending Price Value
           tickerEndingPrices(tickerIndex) = Cells(j, 6).Value
           tickerIndex = tickerIndex + 1 
@@ -123,10 +123,10 @@ tickerEndingPrices) to format the output the of “Ticker,” “Total Daily Vol
 ###Results
 Improving perfomance efficiency involves reducing steps, using less memory, or improving logic to make it easier for future users to interpret.<br/>
 #Comparison output of 2017 and 2018:
-***Original 2017 "All Stocks Analysis" 
-***Refactored 2017 "All Stocks Analysis" 
-***Original 2017 "All Stocks Analysis" 
-***Refactored 2017 "All Stocks Analysis" 
+***Original 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
+***Refactored 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
+***Original 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
+***Refactored 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
 ![TheaterLaunchdate](https://github.com/Quinneth/Kickstarter-analysis/blob/main/Theater_Outcomes_vs_Launch.png)
 
 ### Challenges and Difficulties Encountered
