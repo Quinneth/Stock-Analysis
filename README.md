@@ -2,20 +2,20 @@
 ## Overview of Project
 This project revisits previous stock analysis code using VBA macros.
 1. Provide technical stock analysis and results report.
-2. Refactor VBA code to broaden analsysis scope and attempt to improve performance measure.
+2. Refactor VBA code to broaden analysis scope and attempt to improve performance measure.
 
 ### Purpose
-The purpose of the analysis is to expand the dataset to include the entire stock market for years 2017 and 2018 and measures the duration of execution times for comparison to orignial script. Using knowledge of VBA and the already code provided; scritp must be written during to collect all the information looping through the dataset only once. Specifically, this project aim to:
+The purpose of the analysis is to expand the dataset to include the entire stock market for years 2017 and 2018 and measures the duration of execution times for comparison to original script. Using knowledge of VBA and the already code provided; script must be written during to collect all the information looping through the dataset only once. Specifically, this project aims to:
 - Compare stock performance between 2017 and 2018
 - Document execution time comparisons between original and refactored script
 - Evaluate the pros and cons of applying refactored code to original VBA script
  
 ## Analysis
-This analsyis demonstrates stock performance via yearly returns for years 2017 and 2018. The yearly return is the percentage change in price from year start to end, indicating growth.
+This analysis demonstrates stock performance via yearly returns for years 2017 and 2018. The yearly return is the percentage change in price from year start to end, indicating growth.
 
 #Methodical steps with including code:
 
-1. Activate the specified worksheet, determine the number of rows involved in the loop, then reate a tickerIndex variable and set it equal to zero before iterating over all the rows. The tickerIndex is used to access the correct index across the four different arrays: the tickers array and the three output arrays: tickerVolumes, tickerStartingPrices, and tickerEndingPrices.<br/>
+1. Activate the specified worksheet, determine the number of rows involved in the loop, then create a tickerIndex variable and set it equal to zero before iterating over all the rows. The tickerIndex is used to access the correct index across the four different arrays: the tickers array and the three output arrays: tickerVolumes, tickerStartingPrices, and tickerEndingPrices.<br/>
 
     Activates data worksheet:
     
@@ -59,7 +59,7 @@ This analsyis demonstrates stock performance via yearly returns for years 2017 a
         If Cells(j, 1).Value = tickers(tickerIndex) Then
 
 
-3. Creates a for loop that will loops and reads over the rows in the spreadsheet, then stores all data values from each array by finding starting price for the cufrrent ticker using multiple conditions.<br/>
+3. Creates a for loop that will loops and reads over the rows in the spreadsheet, then stores all data values from each array by finding starting price for the current ticker using multiple conditions.<br/>
 - Writes conditional script, inside the for loop, that increases the current tickerVolumes (stock ticker volume) variable and adds the ticker volume for the current stock ticke and stores as ending price within the worksheet. Uses the tickerIndex variable as the index. Writes an if-then statement to check if the current row is the first row with the selected tickerIndex. If it is, then assign the current closing price to the tickerStartingPrices variable:
     
         tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(j, 8).Value
@@ -120,20 +120,22 @@ tickerEndingPrices) to format the output the of “Ticker,” “Total Daily Vol
         End If
       Next i
 
-###Results
-Improving perfomance efficiency involves reducing steps, using less memory, or improving logic to make it easier for future users to interpret.<br/>
+##Results
+As demonstrated above, improving performance efficiency involves reducing steps, using less memory, or improving logic to make it easier for future users to interpret.<br/>
 #Comparison output of 2017 and 2018:
-***Original 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
-***Refactored 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
-***Original 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
-***Refactored 2017 "All Stocks Analysis" <br/> ![TheaterLaunchdate]
-![TheaterLaunchdate](https://github.com/Quinneth/Kickstarter-analysis/blob/main/Theater_Outcomes_vs_Launch.png)
+***Original 2017 "All Stocks Analysis" <br/> ![Original_2017](https://github.com/Quinneth/Stock-Analysis/blob/main/original_2017_all_stocks.PNG)
+***Refactored 2017 "All Stocks Analysis" <br/> ![Refactored_2017](https://github.com/Quinneth/Stock-Analysis/blob/main/Refactored-2017_All_stocks_analysis.PNG)
+***Original 2018 "All Stocks Analysis" <br/> ![Original_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/original_2018_all_stocks.PNG)
+***Refactored 2018 "All Stocks Analysis" <br/> ![Refactored_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/refactored_2018_All_stocks_analysis.PNG)
 
-### Challenges and Difficulties Encountered
-
-
-
-### Analysis of Outcomes Based on Goals
-
-
-### Challenges and Difficulties Encountered
+###Summary
+#### Advantages or disadvantages of refactoring code in general
+Advantages:
+-eliminated logical errors when increasing dataset
+-increased execution efficiency by utilizing nested loops
+-utilizing previous script revealed source patterns
+#### Disadvantages:
+-Refactoring is time-consuming and requires breaking down code into smaller change segments
+-Complexity of long procedures require advanced coding skills and problem solving
+### Specific pros and cons of refactoring:
+The existing functionality of the workbook was maintained when refactoring existing code. This can remain advantageous unless variables change. If the coder made detailed notes of purpose of each line of code, updating is relatively easy. If coder did not make notes, updating may prove to be tedious and may result in numerous runtime errors
