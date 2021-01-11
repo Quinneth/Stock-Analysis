@@ -4,16 +4,16 @@ This project revisits previous stock analysis code using VBA macros.
 1. Provide technical stock analysis and results report.
 2. Refactor VBA code to broaden analysis scope and attempt to improve performance measure.
 
-### Purpose
+## Purpose
 The purpose of the analysis is to expand the dataset to include the entire stock market for years 2017 and 2018 and measures the duration of execution times for comparison to original script. Using knowledge of VBA and the already code provided; script must be written during to collect all the information looping through the dataset only once. Specifically, this project aims to:
 - Compare stock performance between 2017 and 2018
 - Document execution time comparisons between original and refactored script
 - Evaluate the pros and cons of applying refactored code to original VBA script
  
-## Analysis
+# Analysis
 This analysis demonstrates stock performance via yearly returns for years 2017 and 2018. The yearly return is the percentage change in price from year start to end, indicating growth.
 
-#Methodical steps with including code:
+## Methodical steps with including code:
 
 1. Activate the specified worksheet, determine the number of rows involved in the loop, then create a tickerIndex variable and set it equal to zero before iterating over all the rows. The tickerIndex is used to access the correct index across the four different arrays: the tickers array and the three output arrays: tickerVolumes, tickerStartingPrices, and tickerEndingPrices.<br/>
 
@@ -120,21 +120,21 @@ tickerEndingPrices) to format the output the of “Ticker,” “Total Daily Vol
         End If
       Next i
 
-##Results
+# Results
 As demonstrated above, improving performance efficiency involves reducing steps, using less memory, or improving logic to make it easier for future users to interpret.<br/>
-#Comparison output of 2017 and 2018:
+## Comparison output of 2017 and 2018:
 ***Original 2017 "All Stocks Analysis" <br/> ![Original_2017](https://github.com/Quinneth/Stock-Analysis/blob/main/original_2017_all_stocks.PNG)
 ***Refactored 2017 "All Stocks Analysis" <br/> ![Refactored_2017](https://github.com/Quinneth/Stock-Analysis/blob/main/Refactored-2017_All_stocks_analysis.PNG)
 ***Original 2018 "All Stocks Analysis" <br/> ![Original_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/original_2018_all_stocks.PNG)
 ***Refactored 2018 "All Stocks Analysis" <br/> ![Refactored_2018](https://github.com/Quinneth/Stock-Analysis/blob/main/refactored_2018_All_stocks_analysis.PNG)
 
-###Summary
-#### Advantages or disadvantages of refactoring code in general
+## Summary
+### Advantages or disadvantages of refactoring code in general
 Advantages:
 -eliminated logical errors when increasing dataset
 -increased execution efficiency by utilizing nested loops
 -utilizing previous script revealed source patterns
-#### Disadvantages:
+### Disadvantages:
 -Refactoring is time-consuming and requires breaking down code into smaller change segments
 -Complexity of long procedures require advanced coding skills and problem solving
 ### Specific pros and cons of refactoring:
